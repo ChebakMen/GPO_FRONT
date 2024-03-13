@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img width="200"
+            height="200"
+            src="images/Logo.svg" alt="">
+      </div>
+    </header>
+    <main>
+      <div class="about-us">
+        <div class="about-us__block">
+          <h1 class="about-us__block-title">О проекте</h1>
+          <p class="about-us__block-text">
+            Путем анализа движений на основе видеозаписей, система способствует
+            точной оценке физической активности пациентов, обеспечивая
+            индивидуализированный подход к разработке программ реабилитации. Это
+            позволяет медицинским специалистам более эффективно отслеживать и
+            управлять процессом восстановления, повышая качество заботы и
+            сокращая период реабилитации для пациентов с заболеваниями
+            опорно-двигательного аппарата.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Файл-->
+      <div class="input-file">
+        <div class="input-file__block">
+          <!-- неготово к исполькованию -->
+          <form id="input-file__block-cont" method="POST" action="send.php">
+            <img class="input-file__image" src="images/up.svg" />
+            <div>
+                 <input id="file-input" type="file" name="file" multiple>
+                 <label for="file-input">Выберите файл</label>
+                 <span>или перетащите его сюда</span>
+            </div>
+          </form>
+          <div class="input-file__info">
+              <h1 class="input-file__info-title">Информация о файле</h1>
+              <table class="input-file__info-table">
+                <tbody>
+                  <tr>
+                    <td class="info-table-item ">
+                      Название
+                    </td>
+                    <td class="info-table-item info-table-item_user">
+                      Video_123
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="info-table-item">
+                      Размер
+                    </td>
+                    <td class="info-table-item info-table-item_user">
+                      20 MB
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="info-table-item">
+                      Тип
+                    </td>
+                    <td class="info-table-item info-table-item_user">
+                      MP4
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="info-table-item">
+                      Продолжительность
+                    </td>
+                    <td class="info-table-item info-table-item_user">
+                      2 мин.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Инструкция -->
+      <div class="manual__container">
+        <div class="manual__wrapper">
+          <h1 class="manual__title">Краткая инструкция</h1>
+          <ul class="manual__text">
+            <li>Загрузите ваш видеофайл в поле ввода</li>
+            <li>Подождите несколько минут</li>
+            <li>Cмотри инфу по файлу</li>
+            <li>Делай выводы</li>
+          </ul>
+        </div>
+      </div>  
+
+      <div class="graffics">
+        <div class="graffics__container">
+          
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer__container">
+      <div class="footer__content">
+        <div class="footer__contacts">
+          <h1 class="footer__title">Контакты</h1>
+          <ul class="footer__text">
+            <li><b>Адрес:</b> Томская область<br> г. Томск</li>
+            <li><b>Телефон:</b> +777 777-77-77</li>
+            <li><b>E-mail:</b> pochta@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="footer__help">
+          <h1 class="footer__title">Помощь</h1>
+          <a href="#" class="footer__text footer__link">Обратная связь</a>
+        </div>
+      </div>
+
+      
+
+      <div class="footer__logo">
+        <img width="200"
+            height="200"
+            src="images/Logo.svg" alt="">
+      </div>
+
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
