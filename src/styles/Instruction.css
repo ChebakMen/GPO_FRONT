@@ -1,1 +1,1 @@
-.instruction{margin:0 ;background-color:#D9D9D9;width:100%;margin-bottom:75px}.instruction__container{margin:0 auto;width:800px;padding:60px 30px}
+.instruction{margin:0 ;background-color:#D9D9D9;width:100%;margin-bottom:75px;box-shadow:3px 10px 60px rgba(0,0,0,0.1)}.instruction__container{margin:0 auto;width:800px;padding:60px 30px}.instruction__container::after{top:10px;background-color:red}.instruction__text{margin-bottom:4px}
