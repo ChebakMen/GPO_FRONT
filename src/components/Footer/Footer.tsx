@@ -2,6 +2,7 @@ import '../../styles/Footer.css';
 import {ReactComponent as VK_svg} from "../../images/vk.svg"
 import {ReactComponent as TG_svg} from "../../images/tg.svg"
 import {ReactComponent as Logo} from "../../images/Logo.svg"
+import {ReactComponent as Gos_svg} from "../../images/gos.svg"
 
 export default function Footer(){
     return(
@@ -26,6 +27,9 @@ export default function Footer(){
                         </a>
                         <a className="footer__social-item" href="#">
                             <TG_svg className='footer__social' width={"40px"}  />
+                        </a>
+                        <a className="footer__social-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUR0YDQuNC6INC10YHRgtC70Lg%3D" target="_blank">
+                            <Gos_svg className='footer__social' width={"35px"} height={"42px"}  />
                         </a>
                     </div>
                     

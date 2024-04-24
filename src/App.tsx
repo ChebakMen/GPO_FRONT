@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 import Header from './components/Header/Header';
@@ -11,15 +11,23 @@ import ExportFile from './components/ExportFile/ExportFile';
 
 
 export default function App() {
+
+  const [fileLoaded, setFileLoaded] = useState(false);
+
+  // Функция для обработки загруженного файла
+  const handleFileLoaded = () => {
+    setFileLoaded(true);
+  };
+
   return (
     <>
     <Header />
     <main>
       <About /> 
-      <InputFile />
+      <InputFile onFileLoaded={handleFileLoaded} />
       <Instruction />
-      <Graphics />  
-      <ExportFile />
+      {fileLoaded && <Graphics />}
+      {fileLoaded && <ExportFile />}
     </main>
     <Footer />
     </>

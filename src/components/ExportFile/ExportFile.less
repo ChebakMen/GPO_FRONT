@@ -17,7 +17,7 @@
     &__title{
         font-family: 'Montserrat';
         font-weight: 600;
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 30px;
     }
     &__download{
@@ -29,14 +29,21 @@
         font-size: 25px;
         display: flex;
         flex-direction: row;
-        padding: 20px 40px;
+        padding: 15px 40px;
         text-decoration: none;
         color: #fff;
         font-weight: 500;
         gap: 75px;
+        border: none;
         border-radius: 10px;
-        width: 400px;
-        background-color: #ea0000;
+        width: 420px;
+        background-color: #dc0101;
         align-items: center;
+        transition:background-color 0.4s ;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #f90c0c;
+        }
     }
 }
