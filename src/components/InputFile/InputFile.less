@@ -1,16 +1,17 @@
 .input-file{
     &__container{
         margin-bottom: 75px;
+        height: 790px;
         
     }
     &__block{
         
-        background-color: #D9D9D9;
+        background: rgba(183, 182, 182, 0.2); /* Цвет фона с прозрачностью */
+        backdrop-filter: blur(20px);
         margin: 0 auto;
         height: 525px;
         border-radius: 10px;
-        padding: 40px 60px;
-        box-shadow:3px 10px 60px rgba(0,0,0,0.1);
+        padding: 20px 20px;
         
         
         display: flex;
@@ -53,6 +54,7 @@
             color: #2b2b2b;
             font-size: 20px;
             font-weight: bold;
+            font-family: "Rubik";
             text-align: center;
             transition: color .2s ease-in-out;
         }
@@ -65,7 +67,7 @@
         &-title{
             font-size: 30px;
             text-align: center;
-            font-family: "Montserrat";
+            font-family: "Rubik";
             font-weight: 550;
             margin-bottom: 40px;
             
@@ -80,9 +82,10 @@
     }
     &__submit{
         margin-right: 20px;
+        margin-bottom: 30px;
         border: 1px solid #959595;
         background: #ffffff;
-        padding: 10px 20px;
+        padding: 5px 20px;
         border-radius: 5px;
         color: #050505;
         cursor: pointer;
@@ -100,9 +103,8 @@
 
 .input-file__ul {
     margin-left: 0;
-    /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
-    /* Отступ слева в браузере Firefox, Safari, Chrome */
+    margin-bottom: 50px;
 }
 
 .input-file__li{
@@ -111,12 +113,13 @@
     flex-direction: row;
     align-items: center;
     height: 40px;
-    width: 400px;
+    
+    width: 430px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: #e4e4e4;
-    padding: 10px 30px;
+    padding: 10px 20px;
 
     &:nth-child(2n){
         background-color: #c3c3c3;
@@ -130,7 +133,7 @@ input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
     background: #ffffff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 5px;
     color: #050505;
     cursor: pointer;
@@ -142,9 +145,10 @@ input[type=file]::file-selector-button:hover {
 }
 input[type=file] {
     width: 350px;
+    font-size: 15px;
     max-width: 100%;
     color: #444;
-    padding: 5px;
+    padding: 4px;
     background: #D9D9D9;
     border-radius: 10px;
     border: 1px solid #959595;

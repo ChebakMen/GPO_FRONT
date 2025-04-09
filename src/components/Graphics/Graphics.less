@@ -1,21 +1,24 @@
 .graphics{
-    margin-bottom: 75px;
+    margin-bottom: 290px;
+    
     &__container{
         margin: 0 auto;
         width: 1000px;
-        background-color: #D9D9D9;
-        border-radius: 10px;
-        padding: 30px 50px;
+        border-radius: 20px;
+        padding: 30px 40px;
         display: flex;
         flex-direction: row;
         display: flex;
         justify-content: space-between;
-        box-shadow:3px 10px 60px rgba(0,0,0,0.1);
+        background: rgba(183, 182, 182, 0.2); /* Цвет фона с прозрачностью */
+        backdrop-filter: blur(20px);
+
     }
 
     &__title{
         margin: 0 auto;
         text-align: center;
+        font-family: "Unbounded";
         &--mt15{
             margin-top: 15px;
         }
@@ -27,10 +30,11 @@
     }
 
     &__humanbox{
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 15px 35px;
-        background-color: #bdbdbd; 
+        background-color: #bdbcbc; 
         display: flex;
+        margin-right: 20px;
         align-items: center;
         flex-direction: column;
         box-shadow:20px 15px 50px rgba(0,0,0,0.1);

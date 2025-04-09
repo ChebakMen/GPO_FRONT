@@ -22,13 +22,13 @@ export default function Footer(){
                 <div className="footer__social">
                     <h2 className="footer__title">Мы в соцсетях</h2>
                     <div className="footer__social-items">
-                        <a className="footer__social-item" href="#">
+                        <a className="footer__social-item" href="https://vk.com/da_vinciiii">
                             <VK_svg className='footer__social' width={"40px"}  />
                         </a>
-                        <a className="footer__social-item" href="#">
+                        <a className="footer__social-item" href="https://vk.com/da_vinciiii">
                             <TG_svg className='footer__social' width={"40px"}  />
                         </a>
-                        <a className="footer__social-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUR0YDQuNC6INC10YHRgtC70Lg%3D" target="_blank">
+                        <a className="footer__social-item" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/" target="_blank">
                             <Gos_svg className='footer__social' width={"35px"} height={"42px"}  />
                         </a>
                     </div>

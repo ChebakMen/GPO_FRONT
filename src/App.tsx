@@ -6,28 +6,27 @@ import About from './components/About_Us/About';
 import InputFile from './components/InputFile/InputFile';
 import Footer from './components/Footer/Footer';
 import Graphics from './components/Graphics/Graphics';
-import Instruction from './components/Instruction/Instruction';
+import Technologies from './components/Technologies/Technologies';
 import ExportFile from './components/ExportFile/ExportFile';
 
+import {NextUIProvider} from "@nextui-org/react";
+import Reviews from './components/Rewiews/Reviews';
+import { Functional } from './components/Functional/Functional';
 
 export default function App() {
 
-  const [fileLoaded, setFileLoaded] = useState(false);
-
-  // Функция для обработки загруженного файла
-  const handleFileLoaded = () => {
-    setFileLoaded(true);
-  };
+  
 
   return (
     <>
     <Header />
     <main>
-      <About /> 
-      <InputFile onFileLoaded={handleFileLoaded} />
-      <Instruction />
-      {fileLoaded && <Graphics />}
-      {fileLoaded && <ExportFile />}
+      <NextUIProvider>
+        <About /> 
+        <Technologies />
+        <Functional />
+        <Reviews />
+      </NextUIProvider>
     </main>
     <Footer />
     </>

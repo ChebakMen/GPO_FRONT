@@ -1,15 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,html {
     margin: 0;
     font-family: "Montserrat";
-    background-color: #B5B5B5;
+    background-color: #f7f6f6;
 }
 
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+main{
+    background-image: url('/src/images/Фон.png');
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+.slick-slide > div{
+    margin: 0 10px 0 0; 
+}
+.slick-next:before,
+.slick-prev:before{
+    display: none !important;
+}
+
+
